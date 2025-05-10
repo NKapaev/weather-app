@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="link header__link" href="./">
+          <p class="header__logo">ShowMeWeather</p>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container main-container">
+        <form action="" class="search-form">
+          <div class="search-input__container">
+            <input class="search-input" type="text" placeholder="Enter city" />
+            <button
+              class="search-input__clear-button"
+              type="button"
+              aria-label="Clear"
+            >
+              <img
+                src="./images/cross-icon.svg"
+                width="12px"
+                height="12px"
+                alt=""
+              />
+            </button>
+          </div>
+        </form>
+
+        <p class="selected-city-output"></p>
+        <div class="image-container"></div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
