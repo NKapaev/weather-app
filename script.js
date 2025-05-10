@@ -25,7 +25,7 @@ const selectedCityEl = document.querySelector('.selected-city-output');
 searchForm.addEventListener('submit', e => {
   e.preventDefault();
   fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${searchInputEl.value.trim()}&units=metric&appid=${WEATHER_API_KEY}`,
+    `https://api.openweathermap.org/data/2.5/forecast?q=${searchInputEl.value.trim()}&units=metric&appid=${WEATHER_API_KEY}`,
   )
     .then(r => r.json())
     .then(data => {
